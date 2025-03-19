@@ -1,0 +1,83 @@
+tree Sistema_Control_Tanques/
+Sistema_Control_Tanques/
+├── backend
+│   ├── app.py
+│   ├── controllers
+│   │   ├── evento_controller.py
+│   │   ├── __pycache__
+│   │   ├── sensor_controller.py
+│   │   ├── simulacion_controller.py
+│   │   ├── tanque_controller.py
+│   │   └── valvula_controller.py
+│   ├── database.py
+│   ├── database_queries.py
+│   ├── __init__.py
+│   ├── models
+│   │   ├── evento.py
+│   │   ├── __pycache__
+│   │   │   ├── evento.cpython-312.pyc
+│   │   │   ├── sensor.cpython-312.pyc
+│   │   │   ├── tanque.cpython-312.pyc
+│   │   │   └── valvula.cpython-312.pyc
+│   │   ├── sensor.py
+│   │   ├── tanque.py
+│   │   └── valvula.py
+│   ├── __pycache__
+│   │   └── database.cpython-312.pyc
+│   ├── repositories
+│   │   ├── evento_repository.py
+│   │   ├── __pycache__
+│   │   │   ├── evento_repository.cpython-312.pyc
+│   │   │   ├── sensor_repository.cpython-312.pyc
+│   │   │   ├── tanque_repository.cpython-312.pyc
+│   │   │   └── valvula_repository.cpython-312.pyc
+│   │   ├── sensor_repository.py
+│   │   ├── tanque_repository.py
+│   │   └── valvula_repository.py
+│   ├── requirements.txt
+│   ├── services
+│   │   ├── evento_service.py
+│   │   ├── __pycache__
+│   │   │   ├── evento_service.cpython-312.pyc
+│   │   │   ├── sensor_service.cpython-312.pyc
+│   │   │   ├── tanque_service.cpython-312.pyc
+│   │   │   └── valvula_service.cpython-312.pyc
+│   │   ├── sensor_service.py
+│   │   ├── tanque_service.py
+│   │   └── valvula_service.py
+│   ├── tests
+│   │   ├── test_database.py
+│   │   ├── test_evento.py
+│   │   ├── test_sensor.py
+│   │   ├── test_tanque.py
+│   │   └── test_valvula.py
+│   └── utils
+│       ├── logger.py
+│       └── validators.py
+├── config
+│   ├── config.py
+│   └── __pycache__
+│       └── config.cpython-312.pyc
+├── database
+│   └── BK_ControlTanques.sql
+├── docs
+│   ├── database_doc.txt
+│   ├── estructura.txt
+│   └── README.md
+├── frontend
+│   ├── php
+│   │   ├── reporte_fallos (copia 1).php
+│   │   └── reporte_fallos.php
+│   ├── public
+│   │   ├── assets
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── script.js
+│   └── templates
+├── run_system.py
+├── scripts
+│   ├── backup_db.sh
+│   └── migrate_db.py
+└── Sistema_Control_Tanques.geany

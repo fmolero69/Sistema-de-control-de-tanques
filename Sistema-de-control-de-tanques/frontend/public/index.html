@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Tanques</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Control de Tanques</h1>
+        <p id="ultima-actualizacion">Última actualización: <span id="fecha-hora">Cargando...</span></p>
+
+        <!-- Sección de Tanques -->
+        <div class="tanques">
+            <!-- Tanques de Pintura de Aceite -->
+            <div class="tanque aceite" id="tanque1">
+                <h2>Tanque 1 (Aceite)</h2>
+                <div class="contenido">
+                    <div class="nivel">
+                        <span id="nivel1">100</span>%
+                    </div>
+                    <div class="temperatura">
+                        Temperatura: <span id="temp1">25</span>°C
+                    </div>
+                    <div class="estado-valvula">
+                        Estado Válvula 1: <span id="estado-valvula1">Cerrada</span>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <button id="abrirValvula1">Abrir Válvula 1</button>
+                    <button id="cerrarValvula1">Cerrar Válvula 1</button>
+                </div>
+            </div>
+            <div class="tanque aceite" id="tanque2">
+                <h2>Tanque 2 (Aceite)</h2>
+                <div class="contenido">
+                    <div class="nivel">
+                        <span id="nivel2">0</span>%
+                    </div>
+                    <div class="temperatura">
+                        Temperatura: <span id="temp2">25</span>°C
+                    </div>
+                    <div class="estado-valvula">
+                        Estado Válvula 2: <span id="estado-valvula2">Cerrada</span>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <button id="abrirValvula2">Abrir Válvula 2</button>
+                    <button id="cerrarValvula2">Cerrar Válvula 2</button>
+                </div>
+            </div>
+
+            <!-- Tanques de Pintura de Agua -->
+            <div class="tanque agua" id="tanque3">
+                <h2>Tanque 3 (Agua)</h2>
+                <div class="contenido">
+                    <div class="nivel">
+                        <span id="nivel3">100</span>%
+                    </div>
+                    <div class="temperatura">
+                        Temperatura: <span id="temp3">25</span>°C
+                    </div>
+                    <div class="estado-valvula">
+                        Estado Válvula 3: <span id="estado-valvula3">Cerrada</span>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <button id="abrirValvula3">Abrir Válvula 3</button>
+                    <button id="cerrarValvula3">Cerrar Válvula 3</button>
+                </div>
+            </div>
+            <div class="tanque agua" id="tanque4">
+                <h2>Tanque 4 (Agua)</h2>
+                <div class="contenido">
+                    <div class="nivel">
+                        <span id="nivel4">0</span>%
+                    </div>
+                    <div class="temperatura">
+                        Temperatura: <span id="temp4">25</span>°C
+                    </div>
+                    <div class="estado-valvula">
+                        Estado Válvula 4: <span id="estado-valvula4">Cerrada</span>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <button id="abrirValvula4">Abrir Válvula 4</button>
+                    <button id="cerrarValvula4">Cerrar Válvula 4</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de Control Generales -->
+        <div class="controles">
+            <button id="simularLlenado">Simular Llenado</button>
+            <button id="reporteFallos">Generar Reporte de Fallos</button>
+        </div>
+
+        <!-- Mensaje de Confirmación -->
+        <div id="mensaje-confirmacion"></div>
+    </div>
+
+    <!-- Script para interactuar con el backend -->
+    <script src="js/script.js"></script>
+</body>
+</html>
